@@ -1,6 +1,18 @@
-#include <point.hpp>
+#include "point.hpp"
 
-void func1()
+point set( double x, double y, double z )
 {
-  std::cout << "valor de pi = " << PI << std::endl;
+  point pt;
+
+  pt.x = x;
+  pt.y = y;
+  pt.z = z;
+
+  return pt;
+}
+
+void point_print ( point pt )
+{
+  std::cout << "(" << pt.x << " ," << pt.y << " ," << pt.z << ")";
+  std::cout << std::endl;
 }
